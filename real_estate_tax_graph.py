@@ -265,17 +265,3 @@ graph_builder.add_edge('calculate_tax_rate', END)
 
 # %%
 graph = graph_builder.compile()
-
-# %%
-from IPython.display import Image, display
-
-display(Image(graph.get_graph().draw_mermaid_png()))
-
-# %%
-initial_state = {'query': '5억짜리 집 1채, 10억짜리 집 1채, 20억짜리 집 1채를 가지고 있을 때 세금을 얼마나 내나요?'}
-graph.invoke(initial_state)
-
-# %%
-
-
-
